@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="fall.letters.js"></script>
+<style>
+	body{
+		background:url(images/bg_home.jpg) no-repeat center top #000;
+		font:14px tahoma;
+	}
+	#cont{width:500px;height:600px;}
+	#cont span{color:#fff;}
+	
+</style>
+</head>
+<body>
+	<div id="cont">ABCDEFGHIJKLMNopqrstuvwxyz1234567890</div> 
+	
+	<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery("#cont").fallLetters({
+			minFont:10,
+			maxFont:24,
+			minSpeed:3000, 
+			maxSpeed:1500,
+			fading:true
+		});	
+	});
+	
+	</script>
+</body>
+</html>
